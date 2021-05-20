@@ -2,7 +2,7 @@ require('dotenv').config()
 const { urlencoded } = require('express')
 const express = require('express')
 const app = express()
-
+const cors = require('cors')
 
 
 //database connection
