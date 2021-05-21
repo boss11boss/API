@@ -13,7 +13,8 @@ require('./database')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-
+//cors configuration
+app.use(cors())
 
 //routes
 app.use('/user', require('../api/routes/userroutes'))
