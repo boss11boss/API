@@ -28,7 +28,7 @@ exports.RecipeValidator = (body)=>{
           }),  
 
           image: Joi.string().required(),  
-          ingredientsArray: Joi.string().required(), 
+          ingredientsArray: Joi.required(), 
       });    
 
     return joiSchema.validate(body, { abortEarly: false })
